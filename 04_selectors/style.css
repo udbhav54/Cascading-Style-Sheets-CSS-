@@ -1,0 +1,87 @@
+/*   Basic Section  */
+
+/* 1. Universal Selector -> (Used to remove unwanted thing which given by browser like margin, padding, we want to flash it everythings) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Type Selector -> (Used to select element by their tag name like h1, div, p etc.) */
+p {
+  font-size: 16px;
+  margin: 10px 20px 10px 20px; /* clock-wise */
+  padding: 1px 2px 3px 4px;
+}
+
+/* 3. Class Selector -> (Used to select elements with specific class attribute, start with dot '.') */
+.highlight {
+  background-color: #21a2c9;
+}
+
+/* 4. ID Selector -> (Used to select element by unique id, start with hash '#') */
+#header {
+  background-color: #e4ba44;
+}
+
+/* 5. Attribute Selector -> (Used to select element based on a specific attribute or its value) */
+input[type="text"] {
+  border: 2px solid #21a2c9;
+}
+
+/*   Advanced Section  */
+
+/* 6. Descendant Selector -> (Used to select all elements that are inside a specific element) */
+article p {
+  font-style: italic;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px;
+}
+
+/* 7. Child Selector -> (Used to select direct child elements only) */
+div > p {
+  background-color: rgb(45, 122, 6);
+}
+
+/* 8. Adjacent Sibling Selector -> (Used to select the element that is immediately after another element) */
+h1 + p {
+  font-weight: bold;
+}
+
+/* 9. General Sibling Selector -> (Used to select all elements that are siblings of a specified element) */
+h2 ~ p {
+  color: red;
+}
+
+/* 10. Pseudo-class Selector -> (Used to define special state of an element like hover, active, focus etc.) */
+a:hover {
+  background-color: rgb(27, 219, 126);
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 5px;
+  margin: 4px;
+}
+
+/* 11. Pseudo-element Selector -> (Used to style specific parts of an element like first letter or first line) */
+p::first-letter {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* 12. Grouping Selector -> (Used to apply same style to multiple selectors at once) */
+h1, h2, h3 {
+  color: rgb(216, 11, 178);
+}
+
+/* Important Points
+
+1. Margin -> It's distance between element and neighbouring element.
+
+2. Padding -> Space inside the box.
+
+3. Margin and Padding we can give in all directions like left, right, top, bottom.
+
+4. Only one unique ID on a web page.
+
+*/
